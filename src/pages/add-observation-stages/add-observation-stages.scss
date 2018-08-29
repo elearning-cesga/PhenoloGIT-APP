@@ -1,0 +1,28 @@
+page-add-observation-stages {
+
+    ion-content{
+        background:#eee !important;
+    }
+
+    ion-slides .slide-zoom{
+        height: 100%;
+    }
+
+    ion-slides p{
+        padding: 5px;
+        font-size: 1.4rem;
+        font-weight: normal;
+        line-height: 1.5;
+        color: #222;
+    }
+
+    button{
+        margin: auto;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: color($colors, primary);
+        opacity: 1;
+    }
+
+}

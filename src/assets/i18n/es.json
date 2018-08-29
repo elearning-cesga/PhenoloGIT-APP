@@ -1,0 +1,135 @@
+{
+       
+    "OBSERVATION_LIST_TITLE" : "Lista de observacións",
+    "OBSERVATION_ACTIONS" : "Accións",
+    "DELETE_OBSERVATION" : "Borrar observación",
+    "DELETE_OBSERVATION_ASK" : "¿Eliminar esta observación?",
+    "DELETE_OBSERVATION_ASK_2" : "¿Estás seguro de eliminar esta observación y todos sus datos?",
+    "CANCEL" : "Cancelar",
+    "VALIDATIONS" : "Validacións",
+    "NOT_VALIDATED": "No validada",
+    "LIKES" : "Likes",
+    "COMMENTS" : "Comentarios",
+    "ORDER_BY" : "Ordear por",
+    "DATE": "Data",
+    "ORDER": "Ordear",
+    "OBSERVATION_PUBLISHED": "Observación publicada!",
+    "OBSERVATION_PUBLISHED_2": "A túa observación foi publicada correctamente!",
+    
+    
+    "OBSERVATIONS_LIST" : "Lista de observacións",
+    "OBSERVATIONS_MAP" : "Observacións no mapa",
+    "OBSERVATIONS_BY_SPECIE" : "Observacións por especies",
+    "ADD_NEW_OBSERVATION" :  "Engadir observación",
+    "NOTIFICATIONS" : "Notificacións",
+    "PROFILE" : "Perfil - Preferencias",
+    "HELP_CENTER" : "Centro de axuda",
+    "FEEDBACK" : "Contactanos!",
+    
+    
+    "LOADING" : "Cargando",
+    "NEXT": "Seguinte",
+    "OK": "Vale",
+    "ERROR" : "Erro!",
+    "BACK" : "Atrás",
+    "YES": "Si",
+    "NO": "No",
+    "DELETE":"Eliminar",
+    "VIEW":"Ver",
+    
+    "MARK_ALL_AS_READ": "¿Quieres marcar todas las notificaciones como leídas?",
+    "MARK_AS_READ": "Marcar como leída",
+    
+    
+    "OBSERVATION_MAP_TITLE": "Observación no mapa",
+    
+    
+    "OBSERVATION_FILTER_TITLE": "Filtrar por especies",
+    "FILTER": "Filtrar",
+    
+    "NO_OBSERVATIONS":"No Observations yet",
+    
+    
+    "ADD_SPECIES_TITLE": "Escolle unha especie",
+    
+    
+    "ADD_SPECIE_PAGE_TITLE": "Confirma a túa especie",
+    "WHAT_ARE_YOU_OBSERVING": "Que estás a observar",
+    
+    
+    "ADD_DETAILS_TITLE": "Detalles da observación",
+    "ADD_DETAILS_OBSERVATION_TITLE": "Título da observación",
+    "ADD_DETAILS_DESCRIPTION": "Descripción",
+    "ADD_MEDIA_ERROR": "Revisa os campos!",
+    "ADD_MEDIA_ERROR_2": "Precisamos un título e unha imaxe polo menos!",
+    
+    
+    "ADD_MAP_TITLE": "Observación no mapa",
+    "ADD_MAP_PUBLISH": "Publicar",
+    
+    
+    "PROFILE_SETTINGS": "As túas preferenzas",
+    "PROFILE_LANG": "Lingua",
+    "PROFILE_NAME": "O teu nome",
+    "PROFILE_PASSWORD": "O teu contrasinal",
+    "PROFILE_SAVE": "Gardar",
+    "PROFILE_SAVED_SUCCESSFULLY": "Preferencias guardadas correctamente",
+    
+    
+   "LOGIN" : "Login",
+   "USERNAME" : "Nome de usuario",
+   "PASSWORD" : "Contrasinal",
+   "FORGOT_PASSWORD" : "Esqueciches o contrasinal?",
+   "ERROR_LOGIN" : "O usuario ou contrasinal son incorrectos!",
+   
+   
+   "LOGGED_OUT": "Sair",
+   
+   "UNVALIDATE_OBSERVATION":"Invlidar observación",
+   "VALIDATE_OBSERVATION":"Validar observación",
+   "SHARE_OBSERVATION":"Compartir observación",
+   
+   
+   "WEATHER_STATUS":"Estado do tempo",
+   "SKY_STATUS":"Estado do ceo",
+   "TEMPERATURE":"Tempertura",
+   "HUMIDITY":"Humidade",
+   "PRESSURE": "Presión",
+   "SHARE" : "Compartir",
+   "TYPE_COMMENT":"O teu comentario",
+   "SEND": "Enviar",
+   "WEATHER_CLOUDS":"Nubes",
+   "WEATHER_MIST":" Brétema",
+   "WEATHER_RAIN":"Choiva",
+   "WEATHER_DRIZZLE":"Orballo",
+   "WEATHER_CLEAR":"Despexado",
+   "WEATHER_FOG":"Néboa",
+   
+   "ANY_PROBLEM":"¿Algún problema?",
+
+   "FIND_ANY_PROBLEM":"Have you find any problems using the app? Do you have any suggestions? Please write it down in the form below! Thanks!",
+
+   "OBSERVATION_FILTER_SCHOOL_TITLE":"Observaciones por colegio",
+
+   "MY_OBSERVATIONS":"Mis observaciones",
+
+   "EDIT_OBSERVATION":"Editar observación",
+
+   "OBSERVATION_EDITED":"Observación editada correctamente",
+
+   "OFFLINE_MODE":"¡Estás SIN conexión!",
+
+   "I'M OBSERVING":"Estoy observando",
+
+   "DESCRIBE YOUR OBSERVATION":"Describe tu observación",
+
+   "NO_TITLE":"¡Falta el título!",
+   "NO_TITLE_TEXT":"Por favor introduce un título para tu observación",
+
+   "ADD_MEDIA_TITLE":"Multimedia",
+   "ADD_MEDIA_SUBTITLE":"Añade algunas fotos o vídeos a tu observación",
+
+   "DELETE_MEDIA":"Borrar imagen",
+   "DELETE_MEDIA_SUB":"¿Quieres borrar esta imagen?"
+   
+}

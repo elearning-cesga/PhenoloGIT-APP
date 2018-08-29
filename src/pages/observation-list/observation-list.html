@@ -1,0 +1,97 @@
+<!--
+  Generated template for the ObservationListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color=primary>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+          <span *ngIf="notifications>0" class="notifications">{{notifications}}</span>
+        </button>
+      <ion-title>{{'OBSERVATION_LIST_TITLE'| translate}}</ion-title>
+      <ion-buttons end>
+        <button ion-button (click)="showOrders($event)">
+          <ion-icon name="options"></ion-icon>
+        </button>
+        <button ion-button (click)="showFilters($event)">
+          <ion-icon name="checkbox-outline"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-item *ngIf="networkStatus==0" class="noConnection">
+    Your are in OFFLINE mode!
+  </ion-item>
+
+  <ion-item (click)="openOfflineObservationsPage()" *ngIf="networkStatus==1 && offlineObservations>0" class="noConnection">
+    {{offlineObservations}} observations ready to publish!
+  </ion-item>
+
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-fab bottom right>
+    <button ion-fab (click)='addObservation()'><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
+      <ion-card class="observationCard" *ngFor="let observation of observations">
+          
+        <ion-item>
+          <ion-avatar item-left (click)='openListPage(observation.user_id)'>
+            <img src="[[YOUR_UPLOAD_FOLDER]]avatar/{{observation.user_picture}}">
+          </ion-avatar>
+          <h2 (click)='openListPage(observation.user_id)'>{{observation.user_name}}</h2>
+          <p>{{observation.time}}</p>
+          <ion-icon *ngIf="userType=='1'" (click)="showActions(observation.id)" name="more" item-right></ion-icon>
+        </ion-item>
+      
+        <div class="mediaDiv" (click)='openObservation(observation.id)'>
+
+          <div *ngIf="observation.bestexample==1" class="bestexample" >
+            <img src="assets/img/best_example.png" alt="">
+          </div>
+            
+          <img *ngIf="observation.media.media_type=='picture'" class="observationMedia" src="[[YOUR_UPLOAD_FOLDER]]{{observation.media.media_url}}">
+          <img *ngIf="observation.media.media_type=='video'" class="observationMedia" src="img/videoPoster.jpg">
+            
+          <!-- <span *ngIf="observation.validations>0" class="validatedIcon"></span> -->
+                
+          <ion-badge item-left class="multipleMedia">
+            <ion-icon light name="images"><span>{{observation.countImages}}</span></ion-icon>
+          </ion-badge>
+            
+          <ion-badge item-left class="specieStage">{{observation.specie_en}} > {{observation.stage_en}}</ion-badge>
+            
+        </div>
+
+        <ion-card-content (click)='openObservation(observation.id)'>
+          <h4 color=primary>{{observation.title}}</h4>
+          <p>{{observation.description}}</p>
+        </ion-card-content>
+
+        <ion-item (click)='openObservation(observation.id)'>
+            
+          <ion-badge light item-left>{{observation.likes}} Likes</ion-badge>
+          <ion-badge light item-left>{{observation.comments}} {{'COMMENTS'| translate}}</ion-badge>
+              
+          <ion-badge *ngIf="observation.validations>0" color=primary item-right>{{observation.validations}} {{'VALIDATIONS'| translate}}</ion-badge>
+          <ion-badge *ngIf="!observation.validations>0" item-right class="notvalidated">{{'NOT_VALIDATED'| translate}}</ion-badge>
+        
+        </ion-item>
+        
+      </ion-card>
+
+  <ion-infinite-scroll *ngIf="loadMore==1" (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+</ion-content>

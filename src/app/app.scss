@@ -1,0 +1,79 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.menuUserProfile{
+    // min-height: 200px;
+    background: color($colors, primary);
+    text-align: center;
+    padding: 5px;
+    color:white;
+}
+
+.menuUserProfilePicture{
+    background-size: cover !important;
+    background-position: 50% !important;
+    height: 100px;
+    width: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+.menuIcons{
+    ion-icon{
+        font-size:xx-large;
+    }
+}
+
+.notificationsIcon{
+    position:relative;
+}
+
+.notificationsInMenu{
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    font-family: verdana;
+    right: -10px;
+    line-height: 19px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.noConnection{
+    background:#ffffcc;
+    text-align: center;
+
+    .item-inner{
+        border:none !important;
+    }
+}
+
+@font-face{
+    font-family: 'Passion';
+    src: url('../assets/fonts/passion.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lilita One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/lilita.woff2') format('woff2');    
+  }

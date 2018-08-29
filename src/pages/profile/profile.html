@@ -1,0 +1,70 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color=primary>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" ></ion-icon>
+    </button>
+  <ion-title>Profile</ion-title>
+</ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="profile">
+
+  <section class="profileSection">
+  
+  </section>
+
+  <div *ngIf="imageChanged==0" class="profilePicture" (click)="changeProfilePicture()" [ngStyle]="{'background-image':'url([[YOUR_UPLOAD_FOLDER]]avatar/'+user.picture+')','background-position':'50%',
+  'background-size':'cover'}">
+    <div></div>
+  </div>
+
+  <div *ngIf="imageChanged==1" class="profilePicture" (click)="changeProfilePicture()" [ngStyle]="{'background-image':'url('+imageToUpload.media_url+')','background-position':'50%',
+  'background-size':'cover'}">
+    <div></div>
+  </div>
+
+  <div class="profileName">{{user.name}}</div>
+  <div class="profileUsername">{{user.username}}</div>
+
+  <ion-card>
+
+    <ion-card-header>
+      Settings
+    </ion-card-header>
+
+    <ion-card-content>
+        <ion-item>
+        <ion-label>Language</ion-label>
+        <ion-select [(ngModel)]="user.lang">
+          <ion-option value="en" checked="true">English</ion-option>
+          <ion-option value="es">Español</ion-option>
+          <ion-option value="gl">Galego</ion-option>
+          <ion-option value="lt">Lietuvių</ion-option>
+          <ion-option value="dk">Dansk</ion-option>
+        </ion-select>
+        
+      </ion-item>
+      <ion-item>
+          <ion-label fixed>Name</ion-label>
+        <ion-input type="text" placeholder="{{user.name}}" [(ngModel)]="user.name"></ion-input>
+      </ion-item>
+       <ion-item>
+        <ion-label fixed>Password</ion-label>
+        <ion-input type="password" placeholder="******" [(ngModel)]="user.passwd"></ion-input>
+      </ion-item>
+
+      <button ion-button full color='primary' (click)="saveSettings()">Save</button>
+    </ion-card-content>
+
+  </ion-card>
+  
+</ion-content>

@@ -1,0 +1,32 @@
+[2K[G⠙ Gathering environment info [2K[G⠹ Gathering environment info [2K[G⠸ Gathering environment info [2K[G⠼ Gathering environment info [2K[G⠴ Gathering environment info [2K[G⠦ Gathering environment info [2K[G⠧ Gathering environment info [2K[G⠇ Gathering environment info [2K[G⠏ Gathering environment info [2K[G⠋ Gathering environment info [2K[G⠙ Gathering environment info [2K[G⠹ Gathering environment info [2K[G⠸ Gathering environment info [2K[G⠼ Gathering environment info [2K[G⠴ Gathering environment info [2K[G⠦ Gathering environment info [2K[G⠧ Gathering environment info [2K[G⠇ Gathering environment info [2K[G[2K[G
+cli packages: (/home/abraham/.nvm/versions/node/v8.0.0/lib/node_modules)
+[2K[G
+    @ionic/cli-utils  : 1.19.2
+    ionic (Ionic CLI) : 3.20.0
+[2K[G
+global packages:
+[2K[G
+    cordova (Cordova CLI) : 7.0.1 
+[2K[G
+local packages:
+[2K[G
+    @ionic/app-scripts : 2.1.4
+    Cordova Platforms  : android 6.4.0
+    Ionic Framework    : ionic-angular 3.6.1
+[2K[G
+System:
+[2K[G
+    Android SDK Tools : 26.1.1
+    Node              : v8.0.0
+    npm               : 5.0.0 
+    OS                : Linux 4.4
+[2K[G
+Environment Variables:
+[2K[G
+    ANDROID_HOME : /home/abraham/Android/Sdk
+[2K[G
+Misc:
+[2K[G
+    backend : pro
+[2K[G
+[2K[G

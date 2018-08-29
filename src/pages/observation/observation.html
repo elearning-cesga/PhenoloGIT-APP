@@ -1,0 +1,154 @@
+<!--
+  Generated template for the ObservationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>{{observation.title}}</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="showActions(observation.id)" *ngIf="user.type==1 || user.type==2" >
+            <ion-icon name="more"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="observation-page">
+
+  <ion-card class="observationCard">
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="[[YOUR_UPLOAD_FOLDER]]avatar/{{observation.user_picture}}">
+      </ion-avatar>
+      <h2>{{observation.user_name}}</h2>
+      <p>{{observation.time}}</p>
+      <ion-icon class="iconHeader" (click)="viewInMap(observation.id)" name="map" item-right></ion-icon>
+      <!-- only show actions for admins and teachers -->
+      
+    </ion-item>
+
+    <!--<img class="observationMedia" src="http://calpurnia.xaora.com/uploads/{{observation.media}}">-->
+    
+    <ion-slides #slider_ob pager class="observationMedia" (change)="onSlideChanged()">
+
+      <ion-slide *ngFor="let media of observation.media">
+        <img *ngIf="isEnd==false" class="swipeIcon" src="img/swipe.png" alt="">
+        <img *ngIf="isBeginning==false" class="swipeIconPrevious" src="img/swipePrevious.png" alt="">
+        <img *ngIf="media.media_type=='picture'" class="observationMedia" src="[[YOUR_UPLOAD_FOLDER]]{{media.media_url}}">
+        <video *ngIf="media.media_type=='video'" controls poster="img/videoPoster.jpg" onclick="this.play();">
+          <source src="[[YOUR_UPLOAD_FOLDER]]{{media.media_url}}" type="video/mp4">
+        </video>
+      </ion-slide>
+    
+      <ion-badge *ngIf="observation.validations>0" color="primary" item-right>{{observation.validations}} Validations</ion-badge>
+      <ion-badge *ngIf="!observation.validations>0" item-right class="notvalidated">Not validated</ion-badge>
+      <div *ngIf="observation.bestexample==1" class="bestexample" >
+        <img src="assets/img/best_example.png" alt="">
+      </div>
+
+    </ion-slides>
+
+    <ion-card-content>
+      <p>
+        <ion-badge *ngIf="lang=='en'">{{observation.specie_en}} > {{observation.stage_en}}</ion-badge>
+        <ion-badge *ngIf="lang=='es'">{{observation.specie_es}} > {{observation.stage_es}}</ion-badge>
+        <ion-badge *ngIf="lang=='gl'">{{observation.specie_gl}} > {{observation.stage_gl}}</ion-badge>
+        <ion-badge *ngIf="lang=='dk'">{{observation.specie_dk}} > {{observation.stage_dk}}</ion-badge>
+        <ion-badge *ngIf="lang=='lt'">{{observation.specie_lt}} > {{observation.stage_lt}}</ion-badge>
+      </p>
+      <br>  
+      <h4 *ngIf="isEditting==false" color="primary" focus>{{observation.title}}</h4>
+      <h4 *ngIf="isEditting==true" color="primary"><ion-input class="editInput" value="{{observation.title}}" [(ngModel)]="inputTitle" #editTitle (blur)="editObservation()"></ion-input></h4>
+    <p *ngIf="isEditting==false">{{observation.description}}</p>
+    <p *ngIf="isEditting==true"><ion-textarea class="editInput" [(ngModel)]="inputDescription" value="{{observation.description}}" (blur)="editObservation()" placeholder="Description"></ion-textarea></p>
+    <section class="observationInfo">
+
+      <h4>{{'WEATHER_STATUS'| translate}}</h4>
+
+      <ion-list >
+        
+        <ion-item>
+          <ion-icon *ngIf="observation.w_state == 'Clouds'" name="cloudy" item-left></ion-icon>
+          <ion-icon *ngIf="observation.w_state == 'Mist'" name="cloudy" item-left></ion-icon>
+          <ion-icon *ngIf="observation.w_state == 'Rain'" name="rainy" item-left></ion-icon>
+          <ion-icon *ngIf="observation.w_state == 'Drizzle'" name="cloudy" item-left></ion-icon>
+          <ion-icon *ngIf="observation.w_state == 'Clear'" name="sunny" item-left></ion-icon>
+          <ion-icon *ngIf="observation.w_state == 'Fog'" name="cloudy" item-left></ion-icon>  
+            {{'SKY_STATUS'| translate}}: <span>{{observation.w_state}}</span>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="thermometer" item-left></ion-icon>
+            {{'TEMPERATURE'| translate}}: <span>{{observation.w_temperature}} ºC</span>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="water" item-left></ion-icon>
+            {{'HUMIDITY'| translate}}: <span>{{observation.w_humidity}}%</span>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="information-circle" item-left></ion-icon>
+            {{'PRESSURE'| translate}}: <span>{{observation.w_pressure}} Pa</span>
+        </ion-item>
+
+      </ion-list>
+
+    </section>
+   
+    </ion-card-content>
+
+    <ion-item>
+      <button ion-button *ngIf="observation.userLikes==0" dark clear item-left (click)="liked()">
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>{{observation.likes}} {{'LIKES'| translate}}</div>
+      </button>
+
+      <button ion-button *ngIf="observation.userLikes==1" clear item-left (click)="liked()">
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>{{observation.likes}} {{'LIKES'| translate}}</div>
+      </button>
+      
+      <button color="primary" ion-button clear item-left (click)="openShareDialog(observation.description, observation.title, null, '[[YOUR_BASE_URL]]/?id='+observation.id+' @phenologitorg #phenoloGIT' )">
+        <ion-icon name="share"></ion-icon>
+        <div>{{observation.share}} {{'SHARE'| translate}}</div>
+      </button>
+    
+    </ion-item>
+  </ion-card>
+
+  <ion-list padding class="comments" *ngIf="observation.comments != 0">
+    <ion-list-header>
+      {{observation.comments}} {{'COMENTS'| translate}}
+    </ion-list-header>
+    
+    <section *ngFor="let comment of comments">
+      <ion-item *ngIf="comment.comment" class="comment" >
+        <ion-avatar item-left>
+          <img src="[[YOUR_UPLOAD_FOLDER]]avatar/{{comment.userpicture}}">
+        </ion-avatar>
+        <h2>{{comment.username}}</h2>
+        <p>{{comment.comment}}</p>
+        <ion-icon *ngIf="user.type==1 || user.type==2"item-right color='danger' name="remove-circle" (click)="deleteComment(comment.id)"></ion-icon>
+      </ion-item>
+    </section>
+    
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  
+    <ion-toolbar position="bottom">
+      <ion-input type="text" placeholder="{{TYPE_COMMENT}}" [(ngModel)]="message"></ion-input>
+      <ion-buttons end>
+        <button ion-button (click)='sendComment()'>
+          {{'SEND'| translate}}
+          <ion-icon name="send"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  
+  </ion-footer>

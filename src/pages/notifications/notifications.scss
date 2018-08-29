@@ -1,0 +1,17 @@
+page-notifications {
+    
+    ion-content{
+        background:#eee;
+    }
+
+    .noresults{
+        text-align:center;
+        padding: 20px;
+
+        .badge-md{
+            background:#fff;
+            color:#ccc;
+        }
+    }
+
+}

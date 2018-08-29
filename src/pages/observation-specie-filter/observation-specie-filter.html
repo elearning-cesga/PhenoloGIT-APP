@@ -1,0 +1,32 @@
+<!--
+  Generated template for the ObservationSpecieFilterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color=primary>
+    <ion-title>Filter by specie</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="observation-filter">
+
+  <ion-list>
+    <ion-item *ngFor="let specie of species" (click)="openListPage(specie.id)">
+      <ion-thumbnail item-left>
+        <img src="[[YOUR_UPLOAD_FOLDER]]species/thumbnails/{{specie.thumbnail}}">
+      </ion-thumbnail>
+      <h2 *ngIf="translate.defaultLang=='en'">{{specie.name_en}}</h2>
+      <h2 *ngIf="translate.defaultLang=='lt'">{{specie.name_li}}</h2>
+      <h2 *ngIf="translate.defaultLang=='es'">{{specie.name_es}}</h2>
+      <h2 *ngIf="translate.defaultLang=='gl'">{{specie.name_gl}}</h2>
+      <h2 *ngIf="translate.defaultLang=='dk'">{{specie.name_de}}</h2>
+      <p>{{specie.name}}</p>
+      <button ion-button clear item-right>{{'FILTER'|translate}}</button>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>

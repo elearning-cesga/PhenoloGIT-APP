@@ -1,0 +1,29 @@
+page-add-observation-details {
+
+    ion-content{
+        background-color: #eee !important
+    }
+
+    .inputDescription,.inputTitle{
+        border: solid 1px #ddd;
+        color:#888;
+        padding: 5px;
+        background:#fafafa
+    }
+
+    .inputDescription{
+        height: 50vh;
+        margin-bottom: 15px;
+    }
+
+    .item-md.item-block .item-inner {
+        border-bottom: none;
+    }
+
+    .item-md{
+        background-color:none;
+    }
+
+
+
+}

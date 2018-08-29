@@ -1,0 +1,50 @@
+<ion-menu [content]="content">
+
+  <ion-content>
+
+    <section class="menuUserProfile">
+
+      <div menuClose (click)="login()" *ngIf="user.name==null" class="menuUserProfilePicture" [ngStyle]="{'background':'url(assets/img/notLogged.png) no-repeat'}"></div>
+      <div *ngIf="user.name!=null" class="menuUserProfilePicture" [ngStyle]="{'background':'url([[YOUR_UPLOAD_FOLDER]]avatar/'+user.picture+') no-repeat'}"></div>
+      <div *ngIf="user.name!=null" class="menuUserProfileName">{{user.name}}</div>
+      
+      <!--<profile-buttons padding></profile-buttons>-->
+      <ion-row class="menuIcons">
+        <ion-col width-33 padding>
+            
+              <ion-icon menuClose *ngIf="user.name!=null" name="exit" (click)="logout()"></ion-icon>
+              <ion-icon menuClose *ngIf="user.name==null" name="person" (click)="login()"></ion-icon>
+        
+          </ion-col>
+        <ion-col width-33 padding>
+            
+              <ion-icon menuClose name="settings" (click)="openPage(profilePage)"></ion-icon>
+            
+          </ion-col>
+
+          <ion-col width-33 padding>
+            
+               <ion-icon menuClose class="notificationsIcon" name="notifications" (click)="openPage(notificationsPage)">
+                <span *ngIf="notifications.length>0" class="notificationsInMenu">{{notifications.length}}</span>
+              </ion-icon> 
+              
+
+          </ion-col>
+          
+    </ion-row>
+    <!--<button *ngIf="user.name!=null" ion-button small (click)="openListPage(userId)">{{MY_OBSERVATIONS}}</button>-->
+    
+    </section>
+
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+       <ion-icon name="{{p.icon}}" item-left></ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

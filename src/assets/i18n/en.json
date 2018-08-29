@@ -1,0 +1,130 @@
+{
+       
+    "OBSERVATION_LIST_TITLE" : "Observation List",
+    "OBSERVATION_ACTIONS" : "Observation actions",
+    "DELETE_OBSERVATION" : "Delete observation",
+    "DELETE_OBSERVATION_ASK" : "Delete this observation?",
+    "DELETE_OBSERVATION_ASK_2" : "Are you sure to delete this observations and all its data?",
+    "CANCEL" : "Cancel",
+    "VALIDATIONS" : "Validations",
+    "NOT_VALIDATED": "Not validated",
+    "LIKES" : "Likes",
+    "COMMENTS" : "Comments",
+    "ORDER_BY" : "Order observations by",
+    "DATE": "Date",
+    "ORDER": "Order",
+    "OBSERVATION_PUBLISHED": "Observation published!",
+    "OBSERVATION_PUBLISHED_2": "Your observation was published successfully!",
+    
+    "OBSERVATIONS_LIST" : "Observations List",
+    "OBSERVATIONS_MAP" : "Observations Map",
+    "OBSERVATIONS_BY_SPECIE" : "Observations by Species",
+    "ADD_NEW_OBSERVATION" :  "Add new Observation",
+    "NOTIFICATIONS" : "Notifications",
+    "PROFILE" : "Profile - Settings",
+    "HELP_CENTER" : "Help Center",
+    "FEEDBACK" : "Feedback",
+    
+    "LOADING" : "Loading",
+    "NEXT": "Next",
+    "OK": "Ok",
+    "ERROR" : "Error!",
+    "BACK" : "Atrás",
+    "YES": "Yes",
+    "NO": "No",
+    "DELETE":"Delete",
+    "VIEW":"View",
+    
+    "MARK_ALL_AS_READ": "Do you want to mark all your notifications as read?",
+    "MARK_AS_READ": "Mark as read",
+    
+    "OBSERVATION_MAP_TITLE": "Observs. in Map",
+    
+    "OBSERVATION_FILTER_TITLE": "Filter by Species",
+    "FILTER": "Filter",
+    
+    "NO_OBSERVATIONS":"No Observations yet",
+    
+    "ADD_SPECIES_TITLE": "Select Species",
+    
+    "ADD_SPECIE_PAGE_TITLE": "Confirm your Species",
+    "WHAT_ARE_YOU_OBSERVING": "What are you observing",
+    
+    "ADD_DETAILS_TITLE": "Observation details",
+    "ADD_DETAILS_OBSERVATION_TITLE": "Title of the observation",
+    "ADD_DETAILS_DESCRIPTION": "Description",
+    "ADD_MEDIA_ERROR": "No pictures!",
+    "ADD_MEDIA_ERROR_2": "We need a picture at least!",
+    
+    "ADD_MAP_TITLE": "Observation in the map",
+    "ADD_MAP_PUBLISH": "Publish",
+    
+    "PROFILE_SETTINGS": "Your settings",
+    "PROFILE_LANG": "Language",
+    "PROFILE_NAME": "Your name",
+    "PROFILE_PASSWORD": "Password",
+    "PROFILE_SAVE": "Save Settings",
+    "PROFILE_SAVED_SUCCESSFULLY": "Settings changed succesfully",
+    
+    "LOGIN" : "Login",
+    "USERNAME" : "Username",
+    "PASSWORD" : "Password",
+    "FORGOT_PASSWORD" : "Forgot Password",
+    "ERROR_LOGIN" : "The username or password are incorrect!",
+    
+    "LOGGED_OUT": "Logged out",
+   
+    "UNVALIDATE_OBSERVATION":"Un-validate observation",
+    "VALIDATE_OBSERVATION":"Validate observation",
+    "SHARE_OBSERVATION":"Share observation",
+   
+    "WEATHER_STATUS":"Weather Status",
+    "SKY_STATUS":"Sky Status",
+    "TEMPERATURE":"Temperature",
+    "HUMIDITY":"Humidity",
+    "PRESSURE": "Pressure",
+    "SHARE" : "Share",
+    "TYPE_COMMENT":"Type your comment",
+    "SEND": "Send",
+    "WEATHER_CLOUDS":"Clouds",
+    "WEATHER_MIST":" Mist",
+    "WEATHER_RAIN":"Rain",
+    "WEATHER_DRIZZLE":"Drizzle",
+    "WEATHER_CLEAR":"Clear",
+    "WEATHER_FOG":"Fog",
+    
+    "ANY_PROBLEM":"Any problem?",
+
+    "FIND_ANY_PROBLEM":"Have you find any problems using the app? Do you have any suggestions? Please send us your thoughts using the form below! Thanks!",
+
+    "OBSERVATION_FILTER_SCHOOL_TITLE":"Observations by School",
+
+    "MY_OBSERVATIONS":"My observations",
+
+    "EDIT_OBSERVATION":"Edit observation",
+
+    "OBSERVATION_EDITED":"Observation edited successfully!",
+
+    "OFFLINE_MODE":"You are OFFLINE!",
+
+    "I'M OBSERVING":"I am observing",
+
+    "DESCRIBE YOUR OBSERVATION":"Describe your observation",
+
+    "NO_TITLE":"No title!",
+
+    "NO_TITLE_TEXT":"Please insert a title for your observation",
+    
+    "ADD_MEDIA_TITLE":"Observation media",
+    "ADD_MEDIA_SUBTITLE":"Add some pictures or videos to your observation",
+
+    "DELETE_MEDIA":"Delete media",
+    "DELETE_MEDIA_SUB":"Do you want to delete this picture?",
+
+    "GEOLOCATING":"",
+    "MAP_ERROR_LOCATING":"Error getting your position",
+    "MAP_ERROR_LOCATING_SUB":"We can't get your actual position, please enable your GPS location and try again, or click in the map to set yor position manually"
+
+
+   
+}

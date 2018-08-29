@@ -1,0 +1,45 @@
+<!--
+  Generated template for the AddObservationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color=primary>
+    <ion-title>{{'ADD_NEW_OBSERVATION'| translate}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-item *ngIf="networkStatus==0" class="noConnection">
+    Your are in OFFLINE mode!
+  </ion-item>
+
+    <ion-grid text-center>
+      <ion-row wrap *ngIf="networkStatus==1">
+        <ion-col (click)="openSpeciePage(specie.id)" col-6 *ngFor="let specie of species"  >
+          <div *ngIf="translate.defaultLang=='en'" class="card-title" [ngStyle]="{'background-image': 'url([[YOUR_UPLOAD_FOLDER]]species/'+specie.picture+')'}" ><span>{{specie.name_en}}</span></div>
+          <div *ngIf="translate.defaultLang=='es'" class="card-title" [ngStyle]="{'background-image': 'url([[YOUR_UPLOAD_FOLDER]]species/'+specie.picture+')'}"><span>{{specie.name_es}}</span></div>
+          <div *ngIf="translate.defaultLang=='gl'" class="card-title" [ngStyle]="{'background-image': 'url([[YOUR_UPLOAD_FOLDER]]species/'+specie.picture+')'}"><span>{{specie.name_gl}}</span></div>
+          <div *ngIf="translate.defaultLang=='lt'" class="card-title" [ngStyle]="{'background-image': 'url([[YOUR_UPLOAD_FOLDER]]species/'+specie.picture+')'}"><span>{{specie.name_li}}</span></div>
+          <div *ngIf="translate.defaultLang=='dk'" class="card-title" [ngStyle]="{'background-image': 'url([[YOUR_UPLOAD_FOLDER]]species/'+specie.picture+')'}"><span>{{specie.name_de}}</span></div>
+        </ion-col>
+      </ion-row>
+
+      <!-- For offline mode -->
+      <ion-row wrap *ngIf="networkStatus==0">
+        <ion-col (click)="openSpeciePage(specie.id)" col-6 *ngFor="let specie of offlineSpecies"  >
+          <div *ngIf="translate.defaultLang=='en'" class="card-title" [ngStyle]="{'background-image': 'url('+offlineFileDirectory+'/'+specie.picture+')'}" ><span>{{specie.name_en}}</span></div>
+          <div *ngIf="translate.defaultLang=='es'" class="card-title" [ngStyle]="{'background-image': 'url('+offlineFileDirectory+'/'+specie.picture+')'}"><span>{{specie.name_es}}</span></div>
+          <div *ngIf="translate.defaultLang=='gl'" class="card-title" [ngStyle]="{'background-image': 'url('+offlineFileDirectory+'/'+specie.picture+')'}"><span>{{specie.name_gl}}</span></div>
+          <div *ngIf="translate.defaultLang=='lt'" class="card-title" [ngStyle]="{'background-image': 'url('+offlineFileDirectory+'/'+specie.picture+')'}"><span>{{specie.name_li}}</span></div>
+          <div *ngIf="translate.defaultLang=='dk'" class="card-title" [ngStyle]="{'background-image': 'url('+offlineFileDirectory+'/'+specie.picture+')'}"><span>{{specie.name_de}}</span></div>
+        </ion-col>
+      </ion-row>
+      <!-- -->
+
+    </ion-grid>
+</ion-content>

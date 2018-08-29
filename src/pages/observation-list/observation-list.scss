@@ -1,0 +1,125 @@
+page-observation-list {
+    
+    ion-content{
+        background-color:#eee !important;
+    }
+
+    ion-list{
+        margin-top: 10px !important;
+    }
+
+    .bestexample{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 10vh;
+        height: 10vh;
+    }
+    
+    .offlinePending{
+        background:#ffe1d1;
+        text-align: center;
+    }
+    
+    .notifications{
+        width: 15px;
+        height: 15px;
+        background: red;
+        color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: smaller;
+        line-height: 15px;
+    }
+    
+    .observation-list {
+        background:#eee;
+    
+        .noresults{
+            text-align: center;
+            padding:10px;
+            margin-top: 20px;
+    
+            ion-badge{
+                color: #888;
+            }
+        }
+    
+    }
+    
+    .observationCard{
+        margin-bottom:10px;
+    
+        ion-item{
+            ion-icon{
+                margin-left: 10px
+            }
+        }
+    
+        .mediaDiv{
+            position: relative;
+            
+            video{
+                width: 100%;
+            }
+        }
+    
+        .validatedIcon{
+            padding: 5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            background-image: url("../assets/img/validated.png");
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: 50% 0;
+            height: 75px;
+            width: 75px;
+        }
+    
+        .multipleMedia{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size:.6em;
+            padding:6px;
+    
+            span{
+                padding-left: 4px;
+                font-family: verdana;
+                font-size: 0.9em;
+            }
+        }
+    
+        .specieStage{
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+        }
+    
+        .valGreen{
+            background: #558B2F;
+        }
+    
+        .valOrange{
+            background: darkorange;
+        }
+        
+        ion-badge{
+            font-weight: normal;
+            margin: 5px
+        }
+    
+        .notvalidated{
+            background: darkorange ;
+            color: #fff;
+        }
+        
+    }
+    
+    
+
+}

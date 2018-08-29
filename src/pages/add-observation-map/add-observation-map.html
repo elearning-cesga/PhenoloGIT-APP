@@ -1,0 +1,63 @@
+<!--
+  Generated template for the AddObservationMapPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color=primary>
+    <ion-title>{{'ADD_MAP_TITLE'| translate}}</ion-title>
+    <ion-buttons end>
+        <button ion-button (click)="reGeolocate()">
+          <ion-icon name="locate"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="add-map">
+
+  <ion-item *ngIf="networkStatus==0" class="noConnection">
+    You are in OFFLINE mode!
+  </ion-item>
+
+  <section class="weatherInfo" *ngIf="networkStatus==1">
+
+    <ion-row center>
+        <ion-col width-50 class="temp">
+          <span *ngIf="observation!=null" class="post">{{observation.temperature}} ºC</span> 
+         </ion-col>
+       
+        <ion-col width-50 class="other">      
+          <span class="icon" *ngIf="observation!=null">
+            <ion-icon *ngIf="observation.weatherstate =='Clouds'" name="cloudy"></ion-icon>
+            <ion-icon *ngIf="observation.weatherstate =='Mist'" name="cloudy"></ion-icon>
+            <ion-icon *ngIf="observation.weatherstate == 'Rain'" name="rainy"></ion-icon>
+            <ion-icon *ngIf="observation.weatherstate == 'Drizzle'" name="cloudy"></ion-icon>
+            <ion-icon *ngIf="observation.weatherstate == 'Clear'" name="sunny"></ion-icon>
+            <ion-icon *ngIf="observation.weatherstate == 'Fog'" name="cloudy"></ion-icon>
+          </span>
+          <br>
+          
+        </ion-col>
+    </ion-row>
+  </section>
+
+  <div id="addMap" *ngIf="networkStatus==1">
+      
+  </div>
+
+  <div class="onlyLocate" *ngIf="networkStatus==0 && foundLocation==true">
+    
+    <img src="assets/img/markerBig.png" alt="">
+    
+    <p primary>The observation were located in coordinates: <br>{{offlineCoords.lat}}, {{offlineCoords.lng}}</p>
+    
+  </div>
+
+  <button ion-button class="finishButton" primary (click)="publishObservation()" *ngIf="networkStatus==1">{{'ADD_MAP_PUBLISH'|translate}}</button>
+  <button ion-button class="finishButton" primary (click)="saveOfflineObservation()" *ngIf="networkStatus==0">Save observation</button>
+
+</ion-content>

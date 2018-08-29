@@ -1,0 +1,89 @@
+<!--
+  Generated template for the SpeciePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color=primary>
+    <ion-title>{{'ADD_SPECIE_PAGE_TITLE'| translate}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="add-specie-page">
+
+  <ion-item *ngIf="networkStatus==0" class="noConnection">
+    {{'OFFLINE_MODE'| translate}}
+  </ion-item>
+  
+  <ion-card>
+
+    <ion-card-content class="card-content">
+
+      <section class="specie">
+
+          <ion-card-title>
+              <span *ngIf="translate.defaultLang=='en'">{{specie.name_en}}</span>
+              <span *ngIf="translate.defaultLang=='es'">{{specie.name_es}}</span>
+              <span *ngIf="translate.defaultLang=='gl'">{{specie.name_gl}}</span>
+              <span *ngIf="translate.defaultLang=='lt'">{{specie.name_li}}</span>
+              <span *ngIf="translate.defaultLang=='dk'">{{specie.name_de}}</span>
+              <span class="latin_name">{{specie.name}}</span>
+            </ion-card-title>
+          
+            <section class="description">
+              <span *ngIf="translate.defaultLang=='en'">{{specie.desc_en}}</span>
+              <span *ngIf="translate.defaultLang=='es'">{{specie.desc_es}}</span>
+              <span *ngIf="translate.defaultLang=='gl'">{{specie.desc_gl}}</span>
+              <span *ngIf="translate.defaultLang=='lt'">{{specie.desc_li}}</span>
+              <span *ngIf="translate.defaultLang=='dk'">{{specie.desc_de}}</span>
+            </section>
+      
+            <h5>Select stage:</h5>
+
+      </section>
+
+      <section class="stage">
+
+          <ion-slides #myslider *ngIf="specie.stages!=undefined" pager="true" autoplay="3000" (ionSlideDidChange)="slideChanged()">
+              <ion-slide *ngFor="let stage of specie.stages">
+                <img src="[[YOUR_UPLOAD_FOLDER]]stages/{{stage.stage_picture}}" alt="" *ngIf="networkStatus==1">
+                <img src="{{stage.stage_picture}}" alt="" *ngIf="networkStatus==0">
+                <section class="slide_content">
+                    <h1 *ngIf="translate.defaultLang=='en'">{{stage.stage_en}}</h1>
+                    <p *ngIf="translate.defaultLang=='en'">{{stage.desc_en}}</p>
+                    <h1 *ngIf="translate.defaultLang=='es'">{{stage.stage_es}}</h1>
+                    <p *ngIf="translate.defaultLang=='es'">{{stage.desc_es}}</p>
+                    <h1 *ngIf="translate.defaultLang=='gl'">{{stage.stage_gl}}</h1>
+                    <p *ngIf="translate.defaultLang=='gl'">{{stage.desc_gl}}</p>
+                    <h1 *ngIf="translate.defaultLang=='dk'">{{stage.stage_dk}}</h1>
+                    <p *ngIf="translate.defaultLang=='dk'">{{stage.desc_dk}}</p>
+                    <h1 *ngIf="translate.defaultLang=='lt'">{{stage.stage_lt}}</h1>
+                    <p *ngIf="translate.defaultLang=='lt'">{{stage.desc_lt}}</p>
+                </section>
+                
+              </ion-slide>
+            </ion-slides>
+            
+      </section>
+
+    </ion-card-content>
+
+</ion-card>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar position="bottom">
+              <ion-buttons end>
+                <button *ngIf="translate.defaultLang=='en' && specie.stages!=undefined" (click)="openObservationMedia(specie.stages[stageIndex].stage_id)" ion-button color=primary>{{"I'M OBSERVING"| translate}} {{specie.stages[stageIndex].stage_en}}</button>
+                <button *ngIf="translate.defaultLang=='es' && specie.stages!=undefined" (click)="openObservationMedia(specie.stages[stageIndex].stage_id)" ion-button color=primary>{{"I'M OBSERVING"| translate}} {{specie.stages[stageIndex].stage_es}}</button>
+                <button *ngIf="translate.defaultLang=='gl' && specie.stages!=undefined" (click)="openObservationMedia(specie.stages[stageIndex].stage_id)" ion-button color=primary>{{"I'M OBSERVING"| translate}} {{specie.stages[stageIndex].stage_gl}}</button>
+                <button *ngIf="translate.defaultLang=='dk' && specie.stages!=undefined" (click)="openObservationMedia(specie.stages[stageIndex].stage_id)" ion-button color=primary>{{"I'M OBSERVING"| translate}} {{specie.stages[stageIndex].stage_dk}}</button>
+                <button *ngIf="translate.defaultLang=='lt' && specie.stages!=undefined" (click)="openObservationMedia(specie.stages[stageIndex].stage_id)" ion-button color=primary>{{"I'M OBSERVING"| translate}} {{specie.stages[stageIndex].stage_lt}}</button>
+              </ion-buttons>
+          </ion-toolbar>
+</ion-footer>

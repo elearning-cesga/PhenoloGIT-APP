@@ -1,0 +1,135 @@
+{
+    
+       
+    "OBSERVATION_LIST_TITLE" : "Observationsliste",
+    "OBSERVATION_ACTIONS" : "Observation - handlinger", 
+    "DELETE_OBSERVATION" : "Slet observation",
+    "DELETE_OBSERVATION_ASK" : "Delete this observation?",
+    "DELETE_OBSERVATION_ASK_2" : "Er du sikker på at slette denne observationer og alle sine data?",
+    "CANCEL" : "Afbryd",
+    "VALIDATIONS" : "Godkendelser",
+    "NOT_VALIDATED": "Not validated",
+    "LIKES" : "Likes",
+    "COMMENTS" : "Kommentarer",
+    "ORDER_BY" : "Ordne observationer efter",
+    "DATE": "Dato",
+    "ORDER": "Ordne", 
+    "OBSERVATION_PUBLISHED": "Slet denne observation?",
+    "OBSERVATION_PUBLISHED_2": "Din observation blev registreret",
+    
+    
+    "OBSERVATIONS_LIST" : " Observationsliste",
+    "OBSERVATIONS_MAP" : "Observationskort",
+    "OBSERVATIONS_BY_SPECIE" : "Artsliste",
+    "ADD_NEW_OBSERVATION" :  "Tilføj ny observation ",
+    "NOTIFICATIONS" : "Meddelelser ",
+    "PROFILE" : "Brugerindstillinger",
+    "HELP CENTER" : "Hjælp",
+    "FEEDBACK" : "Feedback",
+    
+    
+    "LOADING" : "loading",
+    "NEXT": "Næste",
+    "OK": "Ok",
+    "ERROR" : "Fejl!",
+    "YES": "Ja",
+    "NO": "Nej",
+    "DELETE":"Slette",
+    "VIEW":"View",
+    
+    "MARK_ALL_AS_READ": "Vil du markere alle dine meddelelser som læst?",
+    "MARK_AS_READ": "Marker som læst",
+    
+    
+    "OBSERVATION_MAP_TITLE": "Observationer på kort",
+    
+    
+    "OBSERVATION_FILTER_TITLE": "Filtrer efter art ",
+    "FILTER": "Filtrer",
+    
+    "NO_OBSERVATIONS":"No Observations yet",
+    
+    
+    "ADD_SPECIES_TITLE": "Vælg art ",
+    
+    
+    "ADD_SPECIE_PAGE_TITLE": "Bekræft art ",
+    "WHAT_ARE_YOU_OBSERVING": "Hvad observerer du?",
+    
+    
+    "ADD_DETAILS_TITLE": "Information om observation",
+    "ADD_DETAILS_OBSERVATION_TITLE": "Titel på observation",
+    "ADD_DETAILS_DESCRIPTION": "Beskrivelse",
+    "ADD_MEDIA_ERROR": "Tjek felterne!",
+    "ADD_MEDIA_ERROR_2": "Du må som minimum skrive en titel og uploade et billede",
+    
+    
+    "ADD_MAP_TITLE": "Tilføj titel på kort observation",
+    "ADD_MAP_PUBLISH": "Publiser",
+    
+    
+    "PROFILE_SETTINGS": "Dine indstillinger ",
+    "PROFILE_LANG": "Sprog",
+    "PROFILE_NAME": "Navn",
+    "PROFILE_PASSWORD": "Adgangskode",
+    "PROFILE_SAVE": "Gem indstillinger ",
+    "PROFILE_SAVED_SUCCESSFULLY": "Indstillinger ændret med succes",
+    
+    
+   "LOGIN" : "Login",
+   "USERNAME" : "Brugernavn",
+   "PASSWORD" : " Adgangskode",
+   "FORGOT_PASSWORD" : "Glemt adgangskode ",
+   "ERROR_LOGIN" : "Brugernavnet eller adgangskoden er forkert!",
+   
+   
+   "LOGGED_OUT": "Logget af",
+   
+   "UNVALIDATE_OBSERVATION":"Un-validate observation",
+   "VALIDATE_OBSERVATION":"Validate observation",
+   "SHARE_OBSERVATION":"Share observation",
+   
+   "WEATHER_STATUS":"Vejrsituation",
+   "SKY_STATUS":"Skydække",
+   "TEMPERATURE":"Temperatur",
+   "HUMIDITY":"Fugtighed (relativ)",
+   "PRESSURE":"Lufttryk",
+   "SHARE" : "Del",
+   "TYPE_COMMENT":"Skriv din kommenar",
+   "SEND": "Send",
+   "WEATHER_CLOUDS":"Skyer",
+   "WEATHER_MIST":" Dis",
+   "WEATHER_RAIN":"Regn",
+   "WEATHER_DRIZZLE":"Småregn",
+   "WEATHER_CLEAR":"Skyfrit",
+   "WEATHER_FOG":"Tåge",
+   
+   "ANY_PROBLEM":"Any problem?",
+
+   "FIND_ANY_PROBLEM":"Have you find any problems using the app? Do you have any suggestions? Please write it down in the form below! Thanks!",
+
+   "OBSERVATION_FILTER_SCHOOL_TITLE":"Filter by school",
+
+   "MY_OBSERVATIONS":"My observations",
+
+   "EDIT_OBSERVATION":"Edit observation",
+
+   "OBSERVATION_EDITED":"Observation edited successfully!",
+
+   "OFFLINE_MODE":"You are OFFLINE!",
+
+   "I'M OBSERVING":"I am observing",
+
+   "DESCRIBE YOUR OBSERVATION":"Describe your observation",
+   
+   "NO_TITLE":"No title!",
+   "NO_TITLE_TEXT":"Please insert a title for your observation",
+
+   "ADD_MEDIA_TITLE":"Observation media",
+   "ADD_MEDIA_SUBTITLE":"Add some pictures or videos to your observation",
+
+   "DELETE_MEDIA":"Delete media",
+   "DELETE_MEDIA_SUB":"Do you want to delete this picture?"
+   
+    
+}

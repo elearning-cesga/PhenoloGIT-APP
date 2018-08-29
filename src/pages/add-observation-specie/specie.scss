@@ -1,0 +1,87 @@
+page-specie {
+
+    ion-content{
+        background-color:#eee !important;
+
+        .card-content{
+            padding:0;
+        }
+
+        section.specie{
+            padding: 10px
+        }
+
+        .latin_name{
+            font-size:small;
+            color:#888;
+            display: block;
+            margin-top: 2px;
+            font-style: italic
+        }
+
+        h1{
+            font-size: 2.0rem !important;
+            margin-top: 6px !important;
+        }
+
+        h5{
+            font-size: 1.2rem !important;
+            color: #888 !important;
+            margin-top: 10px !important;
+        }
+
+        .slide_content{
+            text-align: left !important;
+            padding: 10px;
+
+            h1{
+
+            }
+        }
+
+        .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+            left: 0;
+            top: 10px;
+            width: 100%;
+        }
+    }
+
+    .observationMedia ion-slide{
+        height: 225px;
+        background-size: cover;
+        background-position: 50%;
+        
+    }
+    
+    ion-label{
+        font-size: large;
+    }
+
+    ion-slides{
+
+        .swipeIcon{
+            position: absolute;
+            z-index: 1000;
+            width: 48px;
+            right: 0;
+            top: 10px;
+            opacity: .4;
+        }
+
+        .swiper-pagination-bullet{
+            width: 15px;
+            height: 15px;
+            background: #fff;
+        }
+
+    }
+
+    ion-footer{
+        text-align: right;
+
+        button{
+            
+        }
+    }
+
+}

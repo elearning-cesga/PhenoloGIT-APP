@@ -1,0 +1,68 @@
+page-profile {
+
+    .profile {
+
+        background: #689F38;
+    
+        ion-card{
+        margin-top: 30px;
+    
+            ion-card-content{
+                .button{
+                    margin-top:25px;
+                }
+    
+            }
+        
+        }
+    
+    }
+    
+    .profileSection{
+        height:25%;
+        background: url([[YOUR_UPLOAD_FOLDER]]1469704407624_1469704405564.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+     .profilePicture{
+        width: 150px;
+        height: 150px;
+        bottom: 0px;
+        margin: auto;
+        margin-top: -75px;
+        border-radius: 50%;
+        border: solid 4px #fff;
+        //position: relative;
+    
+        div{
+            background:url(../assets/img/camera.png) no-repeat rgba(255,255,255,0.5);
+            background-position:50%;
+            background-size:32px;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    
+    .profileName{
+        color: #fff;
+        text-align: center;
+        margin: 10px;
+        font-size: 1.5em;
+        font-family: helvetica;
+        font-weight: 100;
+    }
+    
+    .profileUsername{
+        color: #fff;
+        text-align: center;
+        margin: 5px;
+        font-size: 1.2em;
+        font-family: helvetica;
+        font-weight: 100;
+    }
+    
+    
+    
+
+}

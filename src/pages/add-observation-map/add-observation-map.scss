@@ -1,0 +1,89 @@
+page-add-observation-map {
+    .add-map {
+        
+        position: relative;
+       
+        #addMap{
+            height: 100%
+        }
+        
+        .onlyLocate{
+            text-align:center;
+            
+            img{
+                margin: 15px;
+                margin:auto;
+            }
+        }
+        
+        .finishButton{
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            z-index: 1000
+        }
+        
+        .weatherInfo{
+            background-color:rgba(255,255,255,.6);
+            position: absolute;
+            top:0;
+            z-index: 1000;
+            width: 100%;
+            text-shadow: 3px 3px 5px #444;
+            
+            ion-col{
+                text-align: center;
+                color:#fff;
+                padding: 0;
+            }
+            
+            .temp{
+                
+                font-family: 'Lilita One';
+                
+                .pre{
+                    font-size: 5em;
+                }
+                
+                .post{
+                    font-size: 5em;
+                }
+                
+            }
+            
+            .other{
+                text-align: center;
+                
+                .icon {
+                    font-size: 2em;
+                    text-align: center;
+                    
+                    ion-icon{
+                        margin: 8px
+                    }
+                }
+                
+                .weatherDetails{
+                    font-size: 0.9em;
+                    text-align: left;
+                    
+                    ion-row{
+                        padding:0;
+                        
+                        ion-col{
+                            text-align: left !important;
+                            margin-left: 4px;
+                        }
+                        
+                    }
+    
+                    ion-icon{
+                            font-size: 1.6em;
+                    }
+    
+                }
+            }   
+        }
+    }
+    
+}

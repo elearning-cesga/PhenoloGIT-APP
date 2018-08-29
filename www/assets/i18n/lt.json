@@ -1,0 +1,133 @@
+{
+    
+    "OBSERVATION_LIST_TITLE" : "Stebėjijmų sąrašas",
+    "OBSERVATION_ACTIONS" : "Stebėjimų veiksmai", 
+    "DELETE_OBSERVATION" : "Ištrinti stebėjimą", 
+    "DELETE_OBSERVATION_ASK" : "Ištrinti šią pastabą?",
+    "DELETE_OBSERVATION_ASK_2" : "Ar tikrai norite ištrinti šį pastabas ir visus savo duomenis?",
+    "CANCEL" : "Atšaukti",
+    "VALIDATIONS" : "Patvirtinimai",
+    "NOT_VALIDATED": "Nepatvirtina",
+    "LIKES" : "Patinka",
+    "COMMENTS" : "Komentarai",
+    "ORDER_BY" : "Surūšiuoti stebėjimuas pagal",
+    "DATE": "Data",
+    "ORDER": "Surūšiuoti",
+    "OBSERVATION_PUBLISHED": "Stebėjimas paskelbtas!",
+    "OBSERVATION_PUBLISHED_2": "Jūsų stebėjimas paskelbtas sėkmingai!",
+    
+    
+    "OBSERVATIONS_LIST" : "Stebėjimų sąrašas",
+    "OBSERVATIONS_MAP" : "Stebėjimų žemėlapis",
+    "OBSERVATIONS_BY_SPECIE" : "Stebėjimai pagal rūšis",
+    "ADD_NEW_OBSERVATION" :  "Įtraukti naują stebėjimą",
+    "NOTIFICATIONS" : "Pranešimai",
+    "PROFILE" : "Profilio nustatymai",
+    "HELP_CENTER" : "Pagalbos centras",
+    "FEEDBACK" : "Grįžtamasis ryšys",
+    
+    
+    "LOADING" : "Kraunasi",
+    "NEXT": "Kitas",
+    "OK": "Gerai",
+    "ERROR" : "Klaida!",
+    "BACK" : "Atgal",
+    "YES": "Taip",
+    "NO": "Ne",
+    "DELETE":"Panaikinti",
+    "VIEW":"View",
+    
+    "MARK_ALL_AS_READ": "Ar norite pažymėti visus pranešimus kaip skaitytus?",
+    "MARK_AS_READ": "Žymėti kaip skaitytas",
+    
+    
+    "OBSERVATION_MAP_TITLE": "Stebėjimai žemėlapyje",
+    
+    
+    "OBSERVATION_FILTER_TITLE": "Filtras pagal rūšis",
+    "FILTER": "Filtras",
+    
+    "NO_OBSERVATIONS":"No Observations yet",
+    
+    "ADD_SPECIES_TITLE": "Rūšies pasirinkimas",
+    
+    
+    "ADD_SPECIE_PAGE_TITLE": "Rūšies patvirtinimas",
+    "WHAT_ARE_YOU_OBSERVING": "Ką tu stebi?",
+    
+    
+    "ADD_DETAILS_TITLE": "Stebėjimai išsamiau",
+    "ADD_DETAILS_OBSERVATION_TITLE": "Stebėjimo pavadinimas",
+    "ADD_DETAILS_DESCRIPTION": "Aprašymas ",
+    "ADD_MEDIA_ERROR": "Patikrinkite laukus!",
+    "ADD_MEDIA_ERROR_2": "Pirmiausia užpildykite pavadinimą bei įkelkite paveikslėlį!",
+    
+    
+    "ADD_MAP_TITLE": "Stebėjimai žemėlapyje",
+    "ADD_MAP_PUBLISH": " Paskelbti ",
+    
+    
+    "PROFILE_SETTINGS": "Tavo nustatymai ",
+    "PROFILE_LANG": "Kalba",
+    "PROFILE_NAME": " Tavo vardas",
+    "PROFILE_PASSWORD": "Tavo slaptažodis",
+    "PROFILE_SAVE": "Išsaugoti nustatymus ",
+    "PROFILE_SAVED_SUCCESSFULLY": "Nustatymai sėkmingai pakeistas",
+    
+    
+   "LOGIN" : "Prisijungti",
+   "USERNAME" : "Vartotojo vardas",
+   "PASSWORD" : "Slaptažodis",
+   "FORGOT_PASSWORD" : "Pamiršau slaptažodį",
+   "ERROR_LOGIN" : "Neteisingas vartotojo vardas arba slaptažodis!",
+   
+   
+   "LOGGED_OUT": "Atsijungti",
+   
+   "UNVALIDATE_OBSERVATION":"Un-validate observation",
+   "VALIDATE_OBSERVATION":"Validate observation",
+   "SHARE_OBSERVATION":"Share observation",
+   
+   "WEATHER_STATUS":"Oro sąlygos",
+   "SKY_STATUS":"Dangus",
+   "TEMPERATURE":"Temperatūra",
+   "HUMIDITY":"Drėgmė",
+   "PRESSURE": "Slėgis",
+   "SHARE" : "Share",
+   "TYPE_COMMENT":"Įvesk savo komentarą",
+   "SEND": "Siųsti",
+   "WEATHER_CLOUDS":"Debesuota",
+   "WEATHER_MIST":"Migla",
+   "WEATHER_RAIN":"Lietus", 
+   "WEATHER_DRIZZLE":"Dulksna",
+   "WEATHER_CLEAR":"Giedra",
+   "WEATHER_FOG":"Rūkas",
+   
+   "ANY_PROBLEM":"Any problem?",
+
+   "FIND_ANY_PROBLEM":"Have you find any problems using the app? Do you have any suggestions? Please write it down in the form below! Thanks!",
+
+   "OBSERVATION_FILTER_SCHOOL_TITLE":"Filter by school",
+
+   "MY_OBSERVATIONS":"My observations",
+
+   "EDIT_OBSERVATION":"Edit observation",
+
+   "OBSERVATION_EDITED":"Observation edited successfully!",
+
+   "I'M OBSERVING":"I am observing",
+
+   "OFFLINE_MODE":"You are OFFLINE!",
+
+   "DESCRIBE YOUR OBSERVATION":"Describe your observation",
+
+   "NO_TITLE":"No title!",
+   "NO_TITLE_TEXT":"Please insert a title for your observation",
+
+   "ADD_MEDIA_TITLE":"Observation media",
+   "ADD_MEDIA_SUBTITLE":"Add some pictures or videos to your observation",
+
+   "DELETE_MEDIA":"Delete media",
+   "DELETE_MEDIA_SUB":"Do you want to delete this picture?"
+    
+}

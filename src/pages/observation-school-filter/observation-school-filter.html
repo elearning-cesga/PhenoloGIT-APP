@@ -1,0 +1,34 @@
+<!--
+  Generated template for the ObservationSchoolFilterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color=primary>
+    <ion-title>Filter by school</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="observation-filter">
+
+  <ion-list>
+    <ion-item *ngFor="let school of schools" (click)="openListPage(school.id)">
+      <ion-thumbnail item-left>
+        <img src="assets/img/icon-school.png" style="padding:20%">
+      </ion-thumbnail>
+     
+      <h2>
+        <span style="margin-right:5px">
+          <img *ngIf="school.cod_iso=='UK'" src="assets/img/uk_flag.png" style="width: 18px;">
+          <img *ngIf="school.cod_iso=='ES'" src="assets/img/gl_flag.png" style="width: 18px;">
+          <img *ngIf="school.cod_iso=='DK'" src="assets/img/dk_flag.png" style="width: 18px;">
+          <img *ngIf="school.cod_iso=='LT'" src="assets/img/lt_flag.png" style="width: 18px;">
+        </span>{{school.name}}</h2>
+      <ion-icon name="arrow-forward" item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
